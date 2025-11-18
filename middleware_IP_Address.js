@@ -31,6 +31,10 @@ app.get("/contact",(req,resp)=>{
 resp.send("<h1>This is contact page</h1>")
 })
 
+app.get("/service",(req,resp)=>{
+resp.send("<h1>This is service page</h1>")
+})
+
 app.use((req,resp)=>{
 resp.status(404).sendFile(abspath+"/404.html")
 })
