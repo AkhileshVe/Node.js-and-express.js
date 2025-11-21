@@ -39,8 +39,5 @@ app.use((req,resp)=>{
 resp.status(404).sendFile(abspath+"/404.html")
 })
 
-// app.use((req,resp)=>{
-// resp.status(404).sendFile(abspath+"/40e4.html")
-// })
 
 app.listen(3500)
