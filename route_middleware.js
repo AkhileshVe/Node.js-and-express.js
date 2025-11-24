@@ -29,5 +29,9 @@ app.get("/product",(req,resp)=>{
 })
 
 
+app.get("/productq",(req,resp)=>{
+    resp.send("<h1>productq page</h1>")
+})
+
 
 app.listen(3700)
