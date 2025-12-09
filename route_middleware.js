@@ -28,10 +28,4 @@ app.get("/product",(req,resp)=>{
     resp.send("<h1>product page</h1>")
 })
 
-
-app.get("/productq",(req,resp)=>{
-    resp.send("<h1>productq page</h1>")
-})
-
-
 app.listen(3700)
