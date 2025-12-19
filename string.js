@@ -1,0 +1,59 @@
+ // que 1:- Reverse a string without using built-in reverse() method.
+// Input: "ankur" ➜ Output: "rukna"
+
+function palindrom(str) {
+    let input2 = ""
+    for (let i = str.length - 1; i >= 0; i--) {
+        input2 += str[i]
+    }
+    if (input2 === str) {
+        return "is palindrom"
+    } else {
+        return "not palindrom"
+    }
+}
+//console.log(palindrom("madam"))
+
+//__________________________________________________________________________________________________________
+
+//que 2:- Find the first non-repeating character in a string.
+ //Input: "angular" ➜ Output: "n"
+
+
+function firstNonRepeatingChar(str) {
+
+    for (let i = 0; i <= str.length; i++) {
+        if (str.indexOf(str[i]) == str.lastIndexOf(str[i])) {
+            return str[i]
+        }
+    }
+}
+// console.log(firstNonRepeatingChar("angular"))
+
+// function firstNonRepeatingChar1(str) {
+// const count = {};
+//     for (let char of str ) {
+//          count[char] = (count[char] || 0 ) + 1
+//     }
+//      for (let char of str) {
+//     if (count[char] === 1) return char;
+//   }
+// }
+// console.log(firstNonRepeatingChar1("angular")); 
+
+//const str = "apple"
+
+function repeatechar(str){
+   const result = {}
+
+   for(let char of str){
+    if(result[char]){
+        result[char] += 1
+    }else{
+         result[char] = 1
+    }
+}
+console.log(result)
+}
+console.log(repeatechar("apple"))
+
