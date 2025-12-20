@@ -30,15 +30,15 @@ function firstNonRepeatingChar(str) {
 }
 // console.log(firstNonRepeatingChar("angular"))
 
-// function firstNonRepeatingChar1(str) {
-// const count = {};
-//     for (let char of str ) {
-//          count[char] = (count[char] || 0 ) + 1
-//     }
-//      for (let char of str) {
-//     if (count[char] === 1) return char;
-//   }
-// }
+function firstNonRepeatingChar1(str) {
+const count = {};
+    for (let char of str ) {
+         count[char] = (count[char] || 0 ) + 1
+    }
+     for (let char of str) {
+    if (count[char] === 1) return char;
+  }
+}
 // console.log(firstNonRepeatingChar1("angular")); 
 
 //const str = "apple"
@@ -53,7 +53,28 @@ function repeatechar(str){
          result[char] = 1
     }
 }
-console.log(result)
+// console.log(result)
 }
-console.log(repeatechar("apple"))
+// console.log(repeatechar("apple"))
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// que str = "waiting for changes before restart"
+//     output = "restart before change for waiting"
+// reverse the sentance
+
+
+function reverseSentance(str){
+    let words = str.split(" ")
+let result = ""
+
+//return str.split(" ").reverse().join(" ")
+
+for(let i = words.length-1; i >=0 ; i--){
+    result += words[i] + " "
+}
+return result
+
+}
+
+console.log(reverseSentance("waiting for changes before restart"))
