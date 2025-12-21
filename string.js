@@ -68,7 +68,7 @@ function reverseSentance(str){
     let words = str.split(" ")
 let result = ""
 
-//return str.split(" ").reverse().join(" ")
+return str.split(" ").reverse().join(" ")
 
 for(let i = words.length-1; i >=0 ; i--){
     result += words[i] + " "
