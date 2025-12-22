@@ -77,4 +77,14 @@ return result
 
 }
 
-console.log(reverseSentance("waiting for changes before restart"))
+//console.log(reverseSentance("waiting for changes before restart"))
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Que Find the type of arrey ?
+// input = [1,2,3]
+
+let arr = [1,2,3]
+// this is the right way to check the type of arrey
+console.log(Array.isArray(arr))// if output is getting "true" that is called it is arrey 
+
