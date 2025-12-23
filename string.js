@@ -86,5 +86,28 @@ return result
 
 let arr = [1,2,3]
 // this is the right way to check the type of arrey
-console.log(Array.isArray(arr))// if output is getting "true" that is called it is arrey 
+// console.log(Array.isArray(arr))// if output is getting "true" that is called it is arrey 
+
+
+// __________________+++++++++++++++++++++++++++++++____________________________
+
+// first non-repeating element
+
+const arry = [1,2,2,3,3,4,5]
+let rep_result = {}
+
+for(let x of arry){
+    if(rep_result[x]){
+        rep_result[x] +=1
+    }else{
+        rep_result[x] = 1
+    }
+}
+    for(let y of arry){
+if(rep_result[y]===1){
+console.log(y)
+break
+} 
+    }
+console.log(rep_result)
 
