@@ -103,11 +103,30 @@ for(let x of arry){
         rep_result[x] = 1
     }
 }
-    for(let y of arry){
-if(rep_result[y]===1){
-console.log(y)
+    for(let x of arry){
+if(rep_result[x]===1){
+console.log(x)
 break
 } 
     }
 console.log(rep_result)
 
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//second largest number
+
+const arrr = [10,5,20,8]
+let max = -Infinity
+let second = -Infinity
+
+for(let n of arrr){
+    if(n>max){
+        second = max;
+        max = n;
+    }else if(n>second && n!= max){
+        second = n;
+    }
+}
+
+console.log(second)
