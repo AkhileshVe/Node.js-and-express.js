@@ -114,7 +114,7 @@ console.log(rep_result)
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-//second largest number
+// que second largest number
 
 const arrr = [10,5,20,8]
 let max = -Infinity
@@ -130,3 +130,15 @@ for(let n of arrr){
 }
 
 console.log(second)
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// que find the binary number
+
+const binary = [2,30,44,5,7,22,9]
+
+let binaryOutput = binary.map((x)=>{
+    return x.toString(5)
+})
+
+console.log(binaryOutput)
