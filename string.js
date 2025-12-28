@@ -116,29 +116,29 @@ console.log(rep_result)
 
 // que second largest number
 
-const arrr = [10,5,20,8]
-let max = -Infinity
-let second = -Infinity
+// const arrr = [10,5,20,8]
+// let max = -Infinity
+// let second = -Infinity
 
-for(let n of arrr){
-    if(n>max){
-        second = max;
-        max = n;
-    }else if(n>second && n!= max){
-        second = n;
-    }
-}
+// for(let n of arrr){
+//     if(n>max){
+//         second = max;
+//         max = n;
+//     }else if(n>second && n!= max){
+//         second = n;
+//     }
+// }
 
-console.log(second)
+// console.log(second)
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // que find the binary number
 
-const binary = [2,30,44,5,7,22,9]
+// const binary = [2,30,44,5,7,22,9]
 
-let binaryOutput = binary.map((x)=>{
-    return x.toString(5)
-})
+// let binaryOutput = binary.map((x)=>{
+//     return x.toString(5)
+// })
 
-console.log(binaryOutput)
+// console.log(binaryOutput)
