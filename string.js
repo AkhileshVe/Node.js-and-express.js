@@ -142,3 +142,19 @@ console.log(rep_result)
 // })
 
 // console.log(binaryOutput)
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+let arrr = [1,2,3,2,4,2,5,1]
+let obj = {};
+let uniq = []
+for(let i = 0; i< arrr.length; i++){
+   
+  if(!obj[arrr[i]]) {
+      obj[arrr[i]]=true
+      uniq.push(arrr[i])
+  }
+}
+console.log(obj)
+console.log(uniq)
